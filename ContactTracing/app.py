@@ -16,13 +16,6 @@ def show_index():
     return render_template("homePage.html", user_image=full_filename)
 
 
-@app.route('/patientDet', methods=['POST', 'GET'])
-def result():
-    if request.method == 'POST':
-        result = request.form
-        return render_template("result.html", result=result)
-
-
 @app.route('/BtContacts')
 def search():
     import time
