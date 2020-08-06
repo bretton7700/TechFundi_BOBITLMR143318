@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Stay safe and stay home. Carry out contact tracing from the comfort of your home if you show symptoms of covid">
+    <meta name="Keywords" content="covid,contact tracing,stay safe">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='static\css\styles.css') }}">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container" style="width:500px; height:500px; border: solid black 1px;
+                 justify-content:space-around
+    ;overflow: hidden;  margin: 20px auto; padding: 20px; background-color:pink;">
+        <H1 style="color: red;">CONTACT TRACING APPLICATION</H1>
+
+
+
+        <img src="{{ user_image }}" alt="User Image">
+        <p>This app will enable us track your movements and prevent community based spread of covid 19. </p>
+        <p>Click on the link below to get started</p>
+        <a href="http://127.0.0.1:5000/patient">patient's contacts</a>
+    </div>
+
+
+</body>
+
+</html>
